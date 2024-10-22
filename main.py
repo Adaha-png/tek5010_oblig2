@@ -10,7 +10,7 @@ def simulate(agents, tasks, maxitr=100000):
     moving = np.zeros(maxitr)
     for i in tqdm(range(maxitr)):
         for agent in agents:
-            agent.move(tasks, agents)
+            agent.move_with_auction(tasks, agents)
             moving[i] += agent.wait == 0
 
         for task in tasks:

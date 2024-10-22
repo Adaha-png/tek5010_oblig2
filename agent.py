@@ -58,7 +58,7 @@ class Agent:
                         1,
                     )
                     self.di = (self.di + np.pi) % (2 * np.pi)
-                    self.auction(agents, t.capacity)
+                    self.auction(agents, t.capacity - 1)
 
                     break
 
