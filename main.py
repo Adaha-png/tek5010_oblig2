@@ -80,7 +80,7 @@ if __name__ == "__main__":
     # plt.savefig(f"search_ranges.png")
 
     capacity = 3
-    search_range = 300
+    search_range = 600
     num_agents_list = [3, 5, 10, 20, 30, 40, 50, 70]
     num_tasks = 2
     solved = []
@@ -116,5 +116,5 @@ if __name__ == "__main__":
     plt.xticks(num_agents_list)  # Set the positions and labels for x-ticks
     plt.grid()
     plt.legend()
-    plt.savefig("search_ranges_comparison.png")
+    plt.savefig("search_ranges_comparison2.png")
     plt.show()
