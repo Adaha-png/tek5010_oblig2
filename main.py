@@ -91,7 +91,7 @@ if __name__ == "__main__":
         tasks = [Task(capacity=capacity) for _ in range(num_tasks)]
         tasks_auction = [Task(capacity=capacity) for _ in range(num_tasks)]
         solv, _ = simulate(agents, tasks)
-        solv_auction, _ = simulate(agents_auction, tasks_auction)
+        solv_auction, _ = simulate_auction(agents_auction, tasks_auction)
         solved.append(solv)
         solved_auction.append(solv_auction)
 
